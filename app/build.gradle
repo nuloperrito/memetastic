@@ -1,0 +1,118 @@
+/*#######################################################
+ *   Maintained 2016-2023 by Gregor Santner <gsantner AT mailbox DOT org>
+ *
+ *   License of this file: GNU GPLv3
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+#########################################################*/
+apply plugin: 'com.android.application'
+if (enable_plugin_kotlin) {
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
+    apply plugin: 'kotlin-kapt'
+}
+
+rootProject.ext.version_minSdk = 14
+
+android {
+    compileSdkVersion rootProject.ext.version_compileSdk
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.version_minSdk
+        targetSdkVersion rootProject.ext.version_compileSdk
+        buildConfigField "boolean", "IS_TEST_BUILD", "false"
+        buildConfigField "boolean", "IS_GPLAY_BUILD", "false"
+        buildConfigField "String[]", "DETECTED_ANDROID_LOCALES", "${findUsedAndroidLocales()}"
+        buildConfigField "String", "BUILD_DATE", "\"20250725\""
+        buildConfigField "String", "GITHASH", "\"32c4f32a89884fb48464d72b753b74\""
+
+        resValue "string", "manifest_package_id", "io.github.gsantner.memetastic"
+        applicationId "io.github.gsantner.memetastic"
+        versionName "1.7.4"
+        versionCode 74
+        setProperty("archivesBaseName", applicationId + "-v" + versionCode + "-" + versionName)
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        flavorDefault {
+        }
+        flavorGplay {
+            buildConfigField "boolean", "IS_GPLAY_BUILD", "true"
+        }
+    }
+
+    sourceSets {
+        main { assets.srcDirs = ['src/main/assets'] }
+
+        if (enable_plugin_kotlin) {
+            main.java.srcDirs += 'src/main/kotlin'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/LICENSE-LGPL-2.1.txt', 'META-INF/LICENSE-LGPL-3.txt', 'META-INF/LICENSE-W3C-TEST']
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            eachDependency { details ->
+                if (details.requested.group == 'com.android.support') {
+                    if (details.requested.name != 'multidex' && details.requested.name != 'multidex-instrumentation') {
+                        details.useVersion "${rootProject.ext.version_library_androidx}"
+                    }
+                }
+            }
+        }
+    }
+    compileOptions {
+        encoding = 'UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'io.github.gsantner.memetastic'
+    lint {
+        abortOnError false
+        disable 'MissingTranslation', 'InvalidPackage', 'ObsoleteLintCustomCheck', 'DefaultLocale', 'UnusedAttribute', 'VectorRaster', 'InflateParams', 'IconLocation', 'UnusedResources', 'TypographyEllipsis'
+    }
+
+}
+
+dependencies {
+    // Android standard libs
+    implementation "androidx.appcompat:appcompat:1.0.0"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "androidx.preference:preference:1.0.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "com.google.android.material:material:1.0.0"
+    // UI libraries
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+    if (enable_plugin_kotlin) {
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version_plugin_kotlin}"
+    }
+
+}

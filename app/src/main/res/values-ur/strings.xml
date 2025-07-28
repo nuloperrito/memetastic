@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Maintained 2016-2023 by Gregor Santner <gsantner AT mailbox DOT org>
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to the public domain.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources>
+    <string name="open_navdrawer">نیویگیشن کی دراز کھولیں</string>
+    <string name="close_navdrawer">نیویگیشن کی دراز بند کریں</string>
+    <string name="humans">انسان</string>
+    <string name="cartoon">کارٹون</string>
+    <string name="animals">جانور</string>
+    <string name="custom">کسٹم</string>
+    <string name="rage">غصہ</string>
+    <string name="saved">محفوظ</string>
+    <string name="favs">فیورٹ</string>
+    <string name="create">بنائیں</string>
+    <string name="hidden">پوشیدہ</string>
+    <string name="rows_with_title">عنوان والی قطاریں</string>
+    <string name="picture_grid">تصویر کی گرڈ</string>
+    <string name="get_picture_from_gallery">گیلری سے تصویر لیں</string>
+    <string name="get_picture_from_camera">گیلری سے تصویر لیں</string>
+    <string name="error_cannot_start_camera">کیمرا شروع نہیں ہو سکا.</string>
+    <string name="error_picture_selection">کوئی تصویر سیلیکٹ، کھنچی یا محفوظ نہیں کی گئی.</string>
+    <string name="error_couldnot_load_picture_from_storage">گیلری سے تصویر لوڈ نہیں ہو سکی.</string>
+    <string name="recommend">تجویز کریں</string>
+    <string name="changelog">لاگ تبدیل کریں</string>
+    <string name="exit">بند کریں</string>
+    <string name="yes">ہاں</string>
+    <string name="text_size">متن کا سائز</string>
+    <string name="text_color">متن کا رنگ</string>
+    <string name="border_color">بارڈر کا رنگ</string>
+    <string name="successfully_saved">کامیابی سے محفوظ ہو گیا!</string>
+    <string name="top_caption">اوپر والی کیپشن</string>
+    <string name="bottom_caption">نیچے والی کیپشن</string>
+    <string name="enter_caption">کیپشن لکھیں</string>
+    <string name="font">فونٹ</string>
+    <string name="keep_editing">ترمیم جاری رکھیں</string>
+    <string name="text">ٹیکسٹ</string>
+    <string name="size">سائز</string>
+    <string name="background">پس منظر</string>
+    <string name="border">بارڈر</string>
+    <string name="picture">تصویر</string>
+    <string name="about">کے بارے میں</string>
+    <string name="developed_by">کی طرف سے تیار کردہ</string>
+    <string name="licenses">لائسنس</string>
+    <string name="show_licenses">لائسینسز دکھائیں</string>
+    <string name="contributors">معاونین</string>
+    <string name="more_information">مزید معلومات</string>
+    <string name="show_third_party_licenses">تھرڈ پارٹی لائسینسز دکھائیں</string>
+    <string name="miscellaneous">منفرق مضامین</string>
+    <string name="gnu_gplv3_license">ایپ کا لائسینس دکھائیں</string>
+    <string name="settings">ترتیبات</string>
+    <string name="all_caps">تمام کیپس</string>
+    <string name="caps_off">کیپس ختم</string>
+    <string name="rotate">گھمائیں</string>
+    <string name="render_quality">رینڈر کی کوالٹی</string>
+    <string name="picture_quality_percent" formatted="false">تصاویر کی کوالٹی اور سائز. ہائی کوالٹی کا مطلب ہے زیادہ لوڈ ٹائم. اگر ویلیو 25 فیصد سے زیادہ تو شاید ایپ کام نہ کرے لیکن یہ ڈیوائس کے ہارڈ اور تصویر کے سائز پر منحصر ہے.</string>
+    <string name="clear_thumbnails">تھمب نیل کلئیر کریں</string>
+    <string name="columns_portrait">کالمز عمودی</string>
+    <string name="columns_landscape">کالمز افقی</string>
+    <string name="appearance">شکل و صورت</string>
+    <string name="default_mode">ڈیفالٹ موڈ</string>
+    <string name="functionality">فعالیت</string>
+    <string name="save_when_pressing_back">پیچھے جاتے ہوئے محفوظ کریں</string>
+    <string name="padding">پیڈنگ</string>
+    <string name="overview">جائزہ</string>
+    <string name="editor">ایڈیٹر</string>
+    <string name="hide_statusbar_at_this_view">اس منظر میں اسٹیٹس بار چھپائیں</string>
+    <string name="hide_statusbar">اسٹیٹس بار چھپائیں</string>
+    <string name="thumbnail_quality">تھمب نیل کی کوالٹی</string>
+    <string name="view_type">دیکھنے کا انداز</string>
+    <string name="show_in_device_gallery">ڈیوائس گیلری میں دکھائیں</string>
+    <string name="language">زبان</string>
+    <string name="language_change_restart_description">ایپ کی زبان تبدیل کریں. یہ تبدیلی دیکھنے کیلئے ایپ ری سٹارٹ کریں</string>
+    <string name="error_cannot_create_save_directory">غلطی: سیو ڈائریکٹری نہیں بن سکی</string>
+    <string name="other">دیگر</string>
+    <string name="downloading">ڈاؤن لوڈ رہو رہا</string>
+    <string name="downloading_failed">ڈاؤن لوڈ ناکام</string>
+    <string name="unzipping">کھول رہا ہے</string>
+    <string name="successfully_downloaded">کامیابی کے ساتھ ڈاؤنلوڈ ہو گیا</string>
+    <string name="download_latest_assets">تازہ ترین اثاثے ڈاؤنلوڈ کریں</string>
+    <string name="download_latest_assets_checking_description">چیک کرنا کہ آیا حالیہ اثاثے دستیاب ہیں</string>
+    <string name="palette">پیلیٹ</string>
+    <string name="presets">تہ شدہ</string>
+    <string name="select_color">رنگ منتخب کریں</string>
+    <string name="code">کوڈ</string>
+    <string name="favourite">پسندیدہ</string>
+    <string name="remove_favourite">پسندیدہ کو ہٹا دیں</string>
+    <string name="show_title">عنوان دکھائیں</string>
+    <string name="edit_title">ٹائٹل میں ترمیم کریں</string>
+    <string name="hide">چھُپائیں</string>
+    <string name="unhide">عیاں کریں</string>
+    <string name="tap_here_to_add_caption">کیپشن شامل کرنے کے لئے یہاں ٹیپ کریں</string>
+    <string name="search_meme__appspecific">میم تلاش کریں</string>
+    <string name="share_meme_via__appspecific">اپنی میم کو بذریعہ بانٹیں…</string>
+    <string name="save_meme__appspecific">میم کو بچائیں</string>
+    <string name="share_meme__appspecific">میم شیئر کریں</string>
+    <string name="create_meme__appspecific">میم بنائیں</string>
+    <string name="delete_meme__appspecific">میم کو حذف کریں</string>
+    <string name="no_favourites_description__appspecific">ابھی تک کوئی پسندیدہ نہیں ہےn\ ٹیمپلیٹ کے اسٹار بٹن کو استعمال کریں تاکہ اسے پسندیدہ میں شامل کیا جاسکے.</string>
+    <string name="no_custom_templates_description__appspecific">ابھی تک کوئی کسٹم ٹیمپلیٹس نہیں ہیں۔n\ ٹیمپلیٹ کی تصاویر یہاں: s$1%</string>
+    <string name="no_memes_saved_description__appspecific">ابھی تک کوئی میمز محفوظ نہیں ہوا۔ n\میم میں ترمیم کرنے کے بعد ٹاپ سیف بٹن استعمال کریں.</string>
+    <string name="default_mode_description_description__appspecific">اسٹارٹ اپ پر کھولنے کے لئے پہلے سے طے شدہ وضع ( کریٹ ، فیوز یا محفوظ)</string>
+    <string name="press_back_again_to_stop_editing__appspecific">اس میم میں ترمیم کرنا بند کرنے کے لئے دوبارہ دبائیں. اگر پہلے ہی محفوظ نہیں ہوا تو میم کھو جائے گی.</string>
+    <string name="saved_meme_successfully__appspecific">یہ میم کامیابی کے ساتھ آپ کے آلے پر محفوظ تھا. کیا آپ اب اس میم میں ترمیم کرنا چھوڑنا چاہتے ہیں?</string>
+    <string name="save_when_pressing_back_description__appspecific">اگر دباؤ ڈال رہا ہے اور کچھ ان پٹ موجود ہے تو خود بخود میم کو بچائیں</string>
+    <string name="shuffle_meme_list_description__appspecific">زمرہ منتخب کرنے کے بعد میمز کی فہرست کو تبدیل کریں</string>
+    <string name="shuffle_meme_list__appspecific">شفل مییم کی فہرست</string>
+    <string name="view_type_memelist__appspecific">سیٹ ویو کی قسم ( تصویر گرڈ ، عنوان کے ساتھ قطار)</string>
+    <string name="error_storage_permission__appspecific">میمز اور ٹیمپلیٹس کو بچانے کے لئے اسٹوریج کی اجازت کی ضرورت ہے</string>
+    <string name="download_latest_assets_message__appspecific">اس سے فونٹ اور میم ٹیمپلیٹس ( تقریبا 20 MB ڈیٹا) ڈاؤن لوڈ ہوگا.</string>
+    <string name="download_latest_assets_message_description__appspecific">ترتیبات میں آپ دستی طور پر تازہ ترین اثاثے بعد میں بھی حاصل کرسکتے ہیں.</string>
+    <string name="main_view">مین ویو</string>
+    <string name="edit_picture">تصویر میں ترمیم کریں</string>
+    <string name="general">جنرل</string>
+    <string name="picture_viewer">تصویر دیکھنے والا</string>
+    <string name="pictures_shown_in_gallery_and_this_app">گیلری اور اس ایپ میں دکھائی گئی تصاویر</string>
+    <string name="open_source_licenses">سورس لایسنسز کو کھولیں</string>
+    <string name="rate_this_app">اس ایپ کو ریٹ کریں</string>
+    <string name="translate">ترجمہ کریں</string>
+    <string name="more_info_and_help">مزید معلومات اور مدد کریں</string>
+    <string name="report_bugs">کیڑے رپورٹ کریں</string>
+    <string name="join_community">برادری میں شامل ہوں</string>
+    <string name="bug_reports_suggest_improvements">آراء دیں ، کیڑے رپورٹ کریں یا بہتری کی تجویز کریں</string>
+    <string name="help_translating_this_app">اس ایپ کو دوسری زبانوں میں ترجمہ کریں</string>
+    <string name="source_code">سورس کوڈ</string>
+    <string name="project_license">پروجیکٹ لائسنس</string>
+    <string name="more_info_on_how_to_contribute_to_this_project">اس منصوبے میں کس طرح حصہ ڈالنا ہے اس کے بارے میں مزید معلومات</string>
+    <string name="contribute_code_to_this_project_anybody_welcome">پروجیکٹ میں کوڈ کا تعاون کریں. ہر ایک کا استقبال ہے ، بشمول نئے آنے والے</string>
+    <string name="project_team">پروجیکٹ ٹیم</string>
+    <string name="contributors_public_add_yourself_description">شراکت دار کی معلومات دکھائیں. تعاون کرنے کے بعد آپٹ ان بنیاد پر اسے دکھایا جائے</string>
+    <string name="help">مدد</string>
+    <string name="more">مزید</string>
+    <string name="community">برادری</string>
+    <string name="contribute">تعاون کریں</string>
+    <string name="the_file_could_not_be_loaded">فائل بھری نہیں ہوسکتی ہے.</string>
+    <string name="close">بند کریں</string>
+    <string name="all">سب</string>
+    <string name="global_text_settings">عالمی متن کی ترتیبات</string>
+    <string name="show_image">تصویر دکھائیں</string>
+    <string name="show_edited_image">ترمیم شدہ تصویر دکھائیں</string>
+    <string name="save_as_template">ٹیمپلیٹ کے بطور محفوظ کریں</string>
+</resources>

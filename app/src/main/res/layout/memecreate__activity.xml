@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.gsantner.memetastic.activity.MemeCreateActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/LightTextToolbarOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="net.gsantner.memetastic.activity.MemeCreateActivity"
+        tools:showIn="@layout/memecreate__activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/memecreate__activity__image_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/default_margin_2">
+
+                <LinearLayout
+                    android:id="@+id/edit_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/create_caption"
+                        style="@style/AppTheme.MemeCreatorEditTextOnLightBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:hint="@string/enter_caption" />
+
+                    <ImageButton
+                        android:id="@+id/settings_caption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_settings_white_48px" />
+
+                    <ImageButton
+                        android:id="@+id/done_caption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_done_all_black_24dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/memecreate__activity__image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:adjustViewBounds="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/memecreate__activity__moar_controls_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"
+                    android:fadeScrollbars="false"
+                    android:paddingLeft="@dimen/default_margin_2"
+                    android:paddingTop="@dimen/default_margin_2"
+                    android:paddingRight="@dimen/default_margin_2"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="net.gsantner.memetastic.activity.MemeCreateActivity">
+
+                    <LinearLayout
+                        android:id="@+id/memecreate__moar_controls__layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="72dp">
+
+                        <!--   #################################  -->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_2"
+                            android:text="@string/picture"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_1">
+
+                            <Button
+                                android:id="@+id/memecreate__moar_controls__rotate_plus_90deg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:text="@string/rotate"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/primary_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/padding_color_picker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_1"
+                            android:gravity="center_vertical"
+                            android:weightSum="100">
+
+                            <TextView
+                                style="@style/AppTheme.MemeCreatorCaptionText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:text="@string/padding" />
+
+                            <SeekBar
+                                android:id="@+id/memecreate__moar_controls__seek_padding_size"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="55"
+                                android:max="150"
+                                android:progress="18" />
+
+                            <com.jaredrummler.android.colorpicker.ColorPanelView
+                                android:id="@+id/memecreate__moar_controls__color_picker_for_padding"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="15"
+                                android:minHeight="20dp" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/memecreate__moar_controls__global_text_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/global_text_settings" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <net.gsantner.opoc.ui.TouchImageView
+            android:id="@+id/memecreate__activity__fullscreen_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:longClickable="true"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:minHeight="32dp"
+        android:src="@drawable/ic_color_lens_white_48dp"
+        android:visibility="gone"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

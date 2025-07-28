@@ -1,0 +1,89 @@
+/*#######################################################
+ *
+ * SPDX-FileCopyrightText: 2017-2023 Gregor Santner <gsantner AT mailbox DOT org>
+ * SPDX-License-Identifier: Unlicense OR CC0-1.0
+ *
+#########################################################*/
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+import java.text.SimpleDateFormat
+
+buildscript {
+    ext {
+        version_gradle_tools = '7.4.2'
+        version_plugin_kotlin = "1.9.0"
+        enable_plugin_kotlin = false
+
+        version_compileSdk = 34
+        version_buildTools = "34.0.1"
+        version_minSdk = 17
+
+        // https://github.com/guardianproject/NetCipher/releases
+        version_library_netcipher = "2.0.0-alpha1"
+    }
+
+    repositories {
+        maven { url 'https://maven.google.com' }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${version_gradle_tools}"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        if (project.enable_plugin_kotlin) {
+            classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${version_plugin_kotlin}"
+        }
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+    }
+
+    tasks.matching { task -> task.name.matches('.*generate.*Resources') }.all {
+        task -> task.dependsOn copyRepoFiles
+    }
+
+    tasks.matching {it instanceof Test}.all { // Enable unit test output, html+xml output
+        testLogging.events "passed", "skipped", "failed", "standardOut", "standardError"
+        testLogging.showStandardStreams = true
+        reports.junitXml.enabled = true
+        reports.html.enabled = true
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+final String[] ROOT_TO_RAW_COPYFILES = ["README.md", "CHANGELOG.md", "CONTRIBUTORS.md", "LICENSE.txt", "LICENSE.md", "LICENSE"]
+task copyRepoFiles(type: Copy) {
+    from rootProject.files(ROOT_TO_RAW_COPYFILES)
+    into "app/src/main/res/raw"
+    rename { String fileName -> fileName.replace(fileName, fileName.toLowerCase()) }
+}
+
+
+@SuppressWarnings(["UnnecessaryQualifiedReference", "SpellCheckingInspection", "GroovyUnusedDeclaration"])
+// Returns used android languages as a buildConfig array: {'de', 'it', ..}"
+static String findUsedAndroidLocales() {
+    Set<String> langs = new HashSet<>()
+    new File('.').eachFileRecurse(groovy.io.FileType.DIRECTORIES) {
+        final foldername = it.name
+        if (foldername.startsWith('values-') && !it.canonicalPath.contains("build" + File.separator + "intermediates") && !it.canonicalPath.contains("gradle" + File.separator + "daemon")) {
+            new File(it.toString()).eachFileRecurse(groovy.io.FileType.FILES) {
+                if (it.name.toLowerCase().endsWith(".xml") && it.getCanonicalFile().getText('UTF-8').contains("<string")) {
+                    langs.add(foldername.replace("values-", ""))
+                }
+            }
+        }
+    }
+    return '{' + langs.collect { "\"${it}\"" }.join(",") + '}'
+}

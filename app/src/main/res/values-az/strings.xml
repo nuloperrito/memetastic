@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Maintained 2016-2023 by Gregor Santner <gsantner AT mailbox DOT org>
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to the public domain.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources>
+    <string name="open_navdrawer">Hərəkət siyirməsini aç</string>
+    <string name="close_navdrawer">Naviqasiya çəkməcəsini bağla</string>
+    <string name="cartoon">Çizgi film</string>
+    <string name="animals">Heyvanlar</string>
+    <string name="custom">Özəl</string>
+    <string name="rage">Qəzəb</string>
+    <string name="saved">Qalıq</string>
+    <string name="create">Yarat</string>
+    <string name="hidden">Gizli</string>
+</resources>

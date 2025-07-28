@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Maintained 2016-2023 by Gregor Santner <gsantner AT mailbox DOT org>
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to the public domain.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources>
+    <string name="open_navdrawer">Otvori navigacijsku ladicu</string>
+    <string name="close_navdrawer">Zatvorite navigacijsku ladicu</string>
+    <string name="humans">Ljudi</string>
+    <string name="cartoon">Crtani film</string>
+    <string name="animals">Životinje</string>
+    <string name="custom">Prilagođen</string>
+    <string name="rage">Bijes</string>
+    <string name="saved">Sačuvan</string>
+    <string name="favs">Najdraži</string>
+    <string name="create">Kreiraj</string>
+    <string name="hidden">Skriveni</string>
+    <string name="rows_with_title">Redovi s naslovom</string>
+    <string name="picture_grid">Mreža slike</string>
+    <string name="get_picture_from_gallery">Dobij sliku iz galerije</string>
+    <string name="get_picture_from_camera">Dobij sliku iz kamere</string>
+    <string name="error_cannot_start_camera">Nije moguće pokrenuti kameru.</string>
+    <string name="error_picture_selection">Nijedna slika nije označena, uslikana niti pohranjena.</string>
+    <string name="error_couldnot_load_picture_from_storage">Nije moguće učitati sliku iz skladišta.</string>
+    <string name="recommend">Preporučiti</string>
+    <string name="changelog">Popis izmjena</string>
+    <string name="exit">Izlaz</string>
+    <string name="yes">da</string>
+    <string name="text_size">Veličina teksta</string>
+    <string name="text_color">Boja teksta</string>
+    <string name="border_color">Boja okvira</string>
+    <string name="successfully_saved">Uspješno spremljen!</string>
+    <string name="top_caption">Gornji opis</string>
+    <string name="bottom_caption">Donji opis</string>
+    <string name="enter_caption">Unesite opis</string>
+    <string name="font">Pismo</string>
+    <string name="keep_editing">Nastavi uređivanje</string>
+    <string name="text">Tekst</string>
+    <string name="size">Veličina</string>
+    <string name="background">Pozadina</string>
+    <string name="border">Granica</string>
+    <string name="picture">Slika</string>
+    <string name="about">O programu</string>
+    <string name="developed_by">Napravio</string>
+    <string name="licenses">Licence</string>
+    <string name="show_licenses">Prikaži licence</string>
+    <string name="contributors">Saradnici</string>
+    <string name="more_information">Više informacija</string>
+    <string name="show_third_party_licenses">Prikaži ostale licence</string>
+    <string name="miscellaneous">Razno</string>
+    <string name="gnu_gplv3_license">Prikaži licencu programa</string>
+    <string name="settings">Podešavanja</string>
+    <string name="all_caps">Sve kape</string>
+    <string name="caps_off">Sve kape</string>
+    <string name="rotate">Rotiraj</string>
+    <string name="render_quality">Rođaka-Kvaliteta</string>
+    <string name="picture_quality_percent" formatted="false">Kvaliteta i veličina slika. Veće vrijednosti znače duže vrijeme opterećenja. Ovisno o hardveru uređaja i veličini slike, aplikacija ne može raditi kako se očekuje ako je vrijednost veća od 25%.</string>
+    <string name="clear_thumbnails">Jasne sličice</string>
+    <string name="columns_portrait">Portret stupaca</string>
+    <string name="columns_landscape">Stupci ( horizontalno)</string>
+    <string name="appearance">Izgled</string>
+    <string name="default_mode">Zadani način</string>
+    <string name="functionality">Funkcionalnost</string>
+    <string name="save_when_pressing_back">Uštedite prilikom pritiska</string>
+    <string name="padding">Padding</string>
+    <string name="overview">Pregled</string>
+    <string name="editor">Uređivač</string>
+    <string name="hide_statusbar_at_this_view">Sakrijte statusnu traku na ovom pogledu</string>
+    <string name="hide_statusbar">Sakrij statusnu traku</string>
+    <string name="thumbnail_quality">Kvaliteta sličica</string>
+    <string name="view_type">Zadani pogled</string>
+    <string name="show_in_device_gallery">Prikaži u galeriji uređaja</string>
+    <string name="language">Jezik</string>
+    <string name="language_change_restart_description">Promijenite jezik programa. Iznova pokrenite program da aktivirate promjenu</string>
+    <string name="error_cannot_create_save_directory">Pogreška: Ne možete kreirati direktorij za spremanje</string>
+    <string name="other">Ostalo</string>
+    <string name="downloading">Preuzimanje</string>
+    <string name="downloading_failed">Preuzimanje nije uspjelo</string>
+    <string name="unzipping">Otvarajući</string>
+    <string name="successfully_downloaded">Uspješno preuzeto</string>
+    <string name="download_latest_assets">Preuzmite najnoviju imovinu</string>
+    <string name="download_latest_assets_checking_description">Provjera postoji li novija raspoloživa imovina</string>
+    <string name="palette">Paleta</string>
+    <string name="presets">Unaprijed postavljene postavke</string>
+    <string name="select_color">Odaberi boju</string>
+    <string name="code">Šifra</string>
+    <string name="favourite">Favorit</string>
+    <string name="remove_favourite">Uklonite favorita</string>
+    <string name="show_title">Prikaži naslov</string>
+    <string name="edit_title">Uređivanje naslova</string>
+    <string name="hide">Sakrij</string>
+    <string name="unhide">Otkri</string>
+    <string name="tap_here_to_add_caption">Dodirnite ovdje da dodate natpis</string>
+    <string name="search_meme__appspecific">Pretraži Meme</string>
+    <string name="share_meme_via__appspecific">Podijelite svoje Meme preko…</string>
+    <string name="save_meme__appspecific">Spremi Meme</string>
+    <string name="share_meme__appspecific">Podijeli Meme</string>
+    <string name="create_meme__appspecific">Stvorite Meme</string>
+    <string name="delete_meme__appspecific">Izbriši meme</string>
+    <string name="no_favourites_description__appspecific">Još nema favorita.\nKoristite dugme zvijezde meme predloška da biste ga dodali favoritima.</string>
+    <string name="no_custom_templates_description__appspecific">Još nema prilagođenih predložaka.\nOstavljene slike predloška ovdje:%1$s</string>
+    <string name="no_memes_saved_description__appspecific">Još nije sačuvano meme.\nUse gornji gumb za spremanje nakon uređivanja meme.</string>
+    <string name="default_mode_description_description__appspecific">Zadani način otvaranja na startupu (Stvorite, Favoriti ili Spašen)</string>
+    <string name="press_back_again_to_stop_editing__appspecific">Ponovo pritisnite da biste prestali uređivati ovaj meme. Meme će biti izgubljeno ako se već ne spasi.</string>
+    <string name="saved_meme_successfully__appspecific">Ovaj meme je uspješno pohranjen na vašem uređaju. Želite li sada prestati uređivati ovaj meme?</string>
+    <string name="save_when_pressing_back_description__appspecific">Automatski spremite meme ako pritisnete leđa i postojao je neki unos</string>
+    <string name="shuffle_meme_list_description__appspecific">Prebacite listu meme nakon odabira kategorije</string>
+    <string name="shuffle_meme_list__appspecific">Lista meme prigušiva</string>
+    <string name="view_type_memelist__appspecific">Postavite tip prikaza (Mreža slike, Pokazuje s naslovom)</string>
+    <string name="error_storage_permission__appspecific">Potrebno je odobrenje za pohranu za spremanje meme i predložaka</string>
+    <string name="download_latest_assets_message__appspecific">Ovo će preuzeti fontove i predloške meme (oko 20 MB podataka).</string>
+    <string name="download_latest_assets_message_description__appspecific">U postavkama možete ručno dobiti i najnoviju imovinu kasnije.</string>
+    <string name="main_view">Glavni prikaz</string>
+    <string name="edit_picture">Obradi sliku</string>
+    <string name="general">Opće</string>
+    <string name="picture_viewer">Gledalac slike</string>
+    <string name="pictures_shown_in_gallery_and_this_app">Slike prikazane u galeriji i ovoj aplikaciji</string>
+    <string name="open_source_licenses">Open Source licence</string>
+    <string name="rate_this_app">Ocijenite ovaj program</string>
+    <string name="translate">Prevedite</string>
+    <string name="more_info_and_help">Više informacija i pomoć</string>
+    <string name="report_bugs">Prijavite greške i propuste</string>
+    <string name="join_community">Postanite član zajednice</string>
+    <string name="bug_reports_suggest_improvements">Kažite nam Vaše utiske, prijavite greške i propuste ili predložite kako možemo poboljšati program</string>
+    <string name="help_translating_this_app">Prevedite ovaj program na druge jezike</string>
+    <string name="source_code">Izvorni kōd</string>
+    <string name="project_license">Licenca projekta</string>
+    <string name="more_info_on_how_to_contribute_to_this_project">Više informacija o sudjelovanju u ovom projektu</string>
+    <string name="contribute_code_to_this_project_anybody_welcome">Doprinesite projektu vlastitim kōdom. Svačiji je doprinos dobrodošao.</string>
+    <string name="project_team">Tim</string>
+    <string name="contributors_public_add_yourself_description">Prikaži informacije o saradnicima. Priložite informacije o sebi ako želite da budu prikazane ovdje nakon Vašeg doprinosa</string>
+    <string name="help">Pomoć</string>
+    <string name="more">Više</string>
+    <string name="community">Zajednica</string>
+    <string name="contribute">Sudjeluj</string>
+    <string name="the_file_could_not_be_loaded">Datoteka se nije mogla učitati.</string>
+    <string name="close">Zatvori</string>
+    <string name="all">Sve</string>
+    <string name="global_text_settings">Globalne postavke teksta</string>
+    <string name="show_image">Prikaži sliku</string>
+    <string name="show_edited_image">Show edited image</string>
+    <string name="save_as_template">Spremite kao predložak</string>
+</resources>
